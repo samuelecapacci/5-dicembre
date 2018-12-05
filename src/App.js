@@ -44,14 +44,14 @@ class App extends Component {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  insulti
+                  menu
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    vaffanculo
+                    opzione 1
                   </DropdownItem>
                   <DropdownItem>
-                    vai a spendere
+                    opzione 2
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
