@@ -30,8 +30,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="barra">
-        <Navbar color="warning" light expand="md">
+      <div>
+        <Navbar className="barra" color="warning" light expand="md">
           <NavbarBrand href="/">Il Mio Sitino</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
