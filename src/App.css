@@ -32,5 +32,11 @@
 }
 
 .barra {
-  
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b !important;
+  text-decoration: none !important;
+  background-color: #ffc107 !important;
 }

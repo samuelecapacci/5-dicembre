@@ -36,7 +36,7 @@ class App extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <NavItem className="components">
                 <NavLink href="/components/">Components</NavLink>
               </NavItem>
               <NavItem>
