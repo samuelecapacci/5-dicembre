@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Post from './components/post/Post';
 import {
   Collapse,
   Navbar,
@@ -62,6 +63,7 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
+        <Post />
       </div>
     );
   }
