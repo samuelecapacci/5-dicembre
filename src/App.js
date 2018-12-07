@@ -21,14 +21,26 @@ class App extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      post: []
     };
   }
+  
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+  
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((json) => this.setState({
+            post: json
+        })
+        )
+}
+
   render() {
     return (
       <div>
@@ -63,7 +75,11 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-        <div><Post /></div>
+        {this.state.post.map((item) => 
+        <Post item={item}/>
+
+        )
+        }
       </div>
     );
   }

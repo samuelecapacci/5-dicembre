@@ -1,35 +1,21 @@
 import React, { Component } from 'react';
+import './Post.css';
 
 class Post extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            post: []
-        }
-    }
-    
-    dataFetch() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((response) => response.json())
-        .then((json) => this.setState({
-                post: json
-            })
-        )
-    }
 
     render() {
+        let item = this.props.item
+
         return (
             <div className="post">
-                {this.state.post.map((item) => 
-                    <div>
-                    <div>{item.id}</div>
-                    <div>{item.userId}</div>
-                    <div>{item.title}</div>
-                    <div>{item.body}</div>
+                <br />
+                <div className="container">
+                    <div className="id-item"><div className="indice">ID: </div>{item.id}</div>
+                    <div className="id-user"><div className="indice">ID UTENTE: </div>{item.userId}</div>
+                    <div className="item-title"><div className="indice">TITOLO: </div>{item.title}</div>
+                    <div className="item-body"><div className="indice">CONTENUTO: </div>{item.body}</div>
                 </div>
-                )
-
-                }
+                <br />
             </div>
         );
     }
