@@ -45,7 +45,7 @@ class App extends Component {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  menu
+                  Menu
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
@@ -63,7 +63,7 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-        <Post />
+        <div><Post /></div>
       </div>
     );
   }
