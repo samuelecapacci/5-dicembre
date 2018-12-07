@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <Navbar className="barra" color="warning" light expand="md">
           <NavbarBrand href="/">Il Mio Sitino</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />

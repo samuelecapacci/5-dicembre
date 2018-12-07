@@ -9,6 +9,8 @@ class Post extends Component {
         return (
             <div className="post">
                 <br />
+                <br />
+                <br />
                 <div className="container">
                     <div className="id-item"><div className="indice">ID: </div>{item.id}</div>
                     <div className="id-user"><div className="indice">ID UTENTE: </div>{item.userId}</div>
