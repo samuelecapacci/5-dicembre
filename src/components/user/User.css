@@ -1,3 +1,18 @@
 .utente {
     text-align: center
 }
+.id {
+    font-family: 'Courier New', Courier, monospace
+}
+.email {
+    font-family: 'Courier New', Courier, monospace
+}
+.username {
+    font-family: 'Courier New', Courier, monospace
+}
+.name {
+    font-family: 'Courier New', Courier, monospace
+}
+.phone {
+    font-family: 'Courier New', Courier, monospace
+}

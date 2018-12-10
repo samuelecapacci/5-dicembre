@@ -25,11 +25,11 @@ class User extends Component {
                 <br />
                 <br />
                 <br />
-                <div className="id">{this.state.user.id}</div>
-                <div className="name">{this.state.user.name}</div>
-                <div className="username">{this.state.user.username}</div>
-                <div className="email">{this.state.user.email}</div>
-                <div className="phone">{this.state.user.phone}</div>
+                <div className="id"><div className="indice">ID: </div>{this.state.user.id}</div>
+                <div className="name"><div className="indice">NOME: </div>{this.state.user.name}</div>
+                <div className="username"><div className="indice">USERNAME: </div>{this.state.user.username}</div>
+                <div className="email"><div className="indice">EMAIL: </div>{this.state.user.email}</div>
+                <div className="phone"><div className="indice">TELEFONO: </div>{this.state.user.phone}</div>
             </div>
         );
     }
