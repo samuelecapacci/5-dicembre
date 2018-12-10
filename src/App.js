@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Post from './components/post/Post';
+import Utente from './components/user/Utente';
 import {
   Collapse,
   Navbar,
@@ -22,24 +23,25 @@ class App extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      post: []
+      post: [],
+      users: []
     };
   }
-  
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
-  
+
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((response) => response.json())
-        .then((json) => this.setState({
-            post: json
-        })
-        )
-}
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((json) => this.setState({
+        post: json
+      })
+      )
+  }
 
   render() {
     return (
@@ -75,11 +77,12 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-        {this.state.post.map((item) => 
-        <Post item={item}/>
+        {/*{this.state.post.map((item) =>
+          <Post item={item} />
 
         )
-        }
+        } */}
+        
       </div>
     );
   }
