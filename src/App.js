@@ -2,19 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Post from './components/post/Post';
 import User from './components/user/User';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -34,14 +23,14 @@ class App extends Component {
     });
   }
 
-/*  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then((response) => response.json())
-      .then((json) => this.setState({
-        post: json
-      })
-      )
-  } */
+  /*  componentDidMount() {
+      fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((json) => this.setState({
+          post: json
+        })
+        )
+    } */
 
   render() {
     return (
@@ -82,7 +71,7 @@ class App extends Component {
 
         )
         } */}
-        <User id={9}/>
+        <User id={9} />
       </div>
     );
   }
