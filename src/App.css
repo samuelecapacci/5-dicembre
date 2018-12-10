@@ -1,7 +1,6 @@
 .barra {
   font-family: 'Courier New', Courier, monospace !important;
   position: fixed !important;
-  overflow: hidden !important;
   top: 0;
   width: 100%;
 }
@@ -11,8 +10,3 @@
   text-decoration: none !important;
   background-color: #ffc107 !important;
 }
-
-.app {
-  background-color: #b5fff1;
-}
-

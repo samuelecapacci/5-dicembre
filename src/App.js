@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Post from './components/post/Post';
-import Utente from './components/user/Utente';
+import User from './components/user/User';
 import {
   Collapse,
   Navbar,
@@ -34,14 +34,14 @@ class App extends Component {
     });
   }
 
-  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
+/*  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
       .then((response) => response.json())
       .then((json) => this.setState({
         post: json
       })
       )
-  }
+  } */
 
   render() {
     return (
@@ -82,7 +82,7 @@ class App extends Component {
 
         )
         } */}
-        
+        <User id={9}/>
       </div>
     );
   }
